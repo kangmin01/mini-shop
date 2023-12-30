@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { FcShop } from "react-icons/fc";
 import { MdAddBox } from "react-icons/md";
+import { login } from "../api/firebase";
 
 export default function Header() {
   return (
@@ -15,7 +16,7 @@ export default function Header() {
         <Link to="/products/new" className="text-xl">
           <MdAddBox />
         </Link>
-        <Link to="/login">Login</Link>
+        <button onClick={login}>Login</button>
       </nav>
     </header>
   );
