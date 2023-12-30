@@ -1,9 +1,25 @@
 import { Link } from "react-router-dom";
 import { FcShop } from "react-icons/fc";
 import { MdAddBox } from "react-icons/md";
-import { login } from "../api/firebase";
+import { login, logout, onUserStateChange } from "../api/firebase";
+import { useEffect, useState } from "react";
 
 export default function Header() {
+  const [user, setUser] = useState();
+  const handleLogin = () => {
+    login().then(setUser);
+  };
+  const handleLogout = () => {
+    logout().then(setUser);
+  };
+
+  useEffect(() => {
+    onUserStateChange((user) => {
+      console.log(user);
+      setUser(user);
+    });
+  }, []);
+
   return (
     <header className="flex justify-between border-b border-gray-300 p-4">
       <Link to="/" className="flex items-center text-4xl text-brand">
@@ -16,7 +32,8 @@ export default function Header() {
         <Link to="/products/new" className="text-xl">
           <MdAddBox />
         </Link>
-        <button onClick={login}>Login</button>
+        {!user && <button onClick={handleLogin}>Login</button>}
+        {user && <button onClick={handleLogout}>Logout</button>}
       </nav>
     </header>
   );
