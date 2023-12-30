@@ -4,15 +4,13 @@ import { MdAddBox } from "react-icons/md";
 import { login, logout, onUserStateChange } from "../api/firebase";
 import { useEffect, useState } from "react";
 import User from "./User";
+import Button from "./ui/Button";
 
 export default function Header() {
   const [user, setUser] = useState();
 
   useEffect(() => {
-    onUserStateChange((user) => {
-      console.log(user);
-      setUser(user);
-    });
+    onUserStateChange(setUser);
   }, []);
 
   return (
@@ -24,12 +22,14 @@ export default function Header() {
       <nav className="flex items-center gap-4 font-semibold">
         <Link to="/products">Products</Link>
         <Link to="/carts">Carts</Link>
-        <Link to="/products/new" className="text-xl">
-          <MdAddBox />
-        </Link>
+        {user && user.isAdmin && (
+          <Link to="/products/new" className="text-xl">
+            <MdAddBox />
+          </Link>
+        )}
         {user && <User user={user} />}
-        {!user && <button onClick={login}>Login</button>}
-        {user && <button onClick={logout}>Logout</button>}
+        {!user && <Button text="Login" onClick={login} />}
+        {user && <Button text="Logout" onClick={logout} />}
       </nav>
     </header>
   );
