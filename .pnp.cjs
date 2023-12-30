@@ -26,6 +26,7 @@ const RAW_RUNTIME_STATE =
       [null, {\
         "packageLocation": "./",\
         "packageDependencies": [\
+          ["@firebase/app", "npm:0.9.25"],\
           ["@testing-library/jest-dom", "npm:5.17.0"],\
           ["@testing-library/react", "virtual:681a7d8918acf0799a8c16288f1bf2b0f077ab988bd019cc39f4c2540acf649b303c9d417b8437e5f9f2937e24eaa251e04a52685208a1b3383261aef714c34a#npm:13.4.0"],\
           ["@testing-library/user-event", "virtual:681a7d8918acf0799a8c16288f1bf2b0f077ab988bd019cc39f4c2540acf649b303c9d417b8437e5f9f2937e24eaa251e04a52685208a1b3383261aef714c34a#npm:13.5.0"],\
@@ -13461,6 +13462,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./",\
         "packageDependencies": [\
           ["mini-shop", "workspace:."],\
+          ["@firebase/app", "npm:0.9.25"],\
           ["@testing-library/jest-dom", "npm:5.17.0"],\
           ["@testing-library/react", "virtual:681a7d8918acf0799a8c16288f1bf2b0f077ab988bd019cc39f4c2540acf649b303c9d417b8437e5f9f2937e24eaa251e04a52685208a1b3383261aef714c34a#npm:13.4.0"],\
           ["@testing-library/user-event", "virtual:681a7d8918acf0799a8c16288f1bf2b0f077ab988bd019cc39f4c2540acf649b303c9d417b8437e5f9f2937e24eaa251e04a52685208a1b3383261aef714c34a#npm:13.5.0"],\
