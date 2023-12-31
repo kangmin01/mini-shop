@@ -38,6 +38,7 @@ const RAW_RUNTIME_STATE =
           ["react-router-dom", "virtual:681a7d8918acf0799a8c16288f1bf2b0f077ab988bd019cc39f4c2540acf649b303c9d417b8437e5f9f2937e24eaa251e04a52685208a1b3383261aef714c34a#npm:6.21.1"],\
           ["react-scripts", "virtual:681a7d8918acf0799a8c16288f1bf2b0f077ab988bd019cc39f4c2540acf649b303c9d417b8437e5f9f2937e24eaa251e04a52685208a1b3383261aef714c34a#npm:5.0.1"],\
           ["tailwindcss", "npm:3.4.0"],\
+          ["uuid", "npm:9.0.1"],\
           ["web-vitals", "npm:2.1.4"]\
         ],\
         "linkType": "SOFT"\
@@ -13474,6 +13475,7 @@ const RAW_RUNTIME_STATE =
           ["react-router-dom", "virtual:681a7d8918acf0799a8c16288f1bf2b0f077ab988bd019cc39f4c2540acf649b303c9d417b8437e5f9f2937e24eaa251e04a52685208a1b3383261aef714c34a#npm:6.21.1"],\
           ["react-scripts", "virtual:681a7d8918acf0799a8c16288f1bf2b0f077ab988bd019cc39f4c2540acf649b303c9d417b8437e5f9f2937e24eaa251e04a52685208a1b3383261aef714c34a#npm:5.0.1"],\
           ["tailwindcss", "npm:3.4.0"],\
+          ["uuid", "npm:9.0.1"],\
           ["web-vitals", "npm:2.1.4"]\
         ],\
         "linkType": "SOFT"\
@@ -18698,6 +18700,13 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/uuid-npm-8.3.2-eca0baba53-10c0.zip/node_modules/uuid/",\
         "packageDependencies": [\
           ["uuid", "npm:8.3.2"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
+      ["npm:9.0.1", {\
+        "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/uuid-npm-9.0.1-39a8442bc6-10c0.zip/node_modules/uuid/",\
+        "packageDependencies": [\
+          ["uuid", "npm:9.0.1"]\
         ],\
         "linkType": "HARD"\
       }]\
